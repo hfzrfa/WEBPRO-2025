@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TABEL INPUT</title>
+
+    <title>Praktikum Modul 1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        padding: 5px;
+        text-align: center;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: #444;
+      }
+
+      nav a {
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        text-align: center;
+      }
+
+      nav a:hover {
+        background-color: #575757;
+      }
+
+      section {
+        margin: 20px;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid #ddd;
+      }
+
+      th,
+      td {
+        padding: 10px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      label {
+        margin-bottom: 8px;
+        font-weight: bold;
+      }
+
+      input[type="text"],
+      select,
+      input[type="checkbox"] {
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">Tabel Mahasiswa</a>
+      <a href="/tabel-input.html" target="_blank">Form Input Mahasiswa</a>
+    </nav>
+
+    <section id="form-input">
+      <h2>Form Input Data Mahasiswa</h2>
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="nim">NIM:</label>
+        <input type="text" id="nim" name="nim" required />
+
+        <label for="jurusan">Jurusan:</label>
+        <select id="jurusan" name="jurusan" required>
+          <option value="TI">Teknik Informatika</option>
+          <option value="Manajemen">Manajemen</option>
+          <option value="Akuntansi">Akuntansi</option>
+          <option value="Teknik Mesin">Teknik Mesin</option>
+          <option value="Desain Grafis">Desain Grafis</option>
+        </select>
+
+        <label for="hobi">Hobi:</label>
+        <input type="checkbox" id="hobi" name="hobi" value="Membaca" /> Membaca
+        <input type="checkbox" id="hobi" name="hobi" value="Olahraga" />
+        Olahraga
+        <input type="checkbox" id="hobi" name="hobi" value="Musik" /> Musik
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+  </body>
+</html>

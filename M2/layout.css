@@ -1,0 +1,18 @@
+#header {
+  height: 100px;
+  background-color: #0000FF;
+  color: white;
+  text-align: center;
+}
+
+#content {
+  height: 400px;
+  background-color: #D3D3D3;
+}
+
+#footer {
+  height: 50px;
+  background-color: #00008B;
+  color: white;
+  text-align: center;
+}

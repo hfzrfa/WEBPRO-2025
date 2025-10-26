@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hafiz Rafie Aditya</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <main class="container">
+    <h1>Hafiz</h1>
+
+    <section class="card">
+      <h2>1) Tombol dengan Fungsi JavaScript</h2>
+      <button id="btnAlert">Klik Saya</button>
+    </section>
+
+    <section class="card">
+      <h2>2) Mengubah Konten HTML</h2>
+      <p id="teks">kalo di tekekn berubah teksnya</p>
+      <button id="btnUbah">Ubah Teks</button>
+    </section>
+
+    <section class="card">
+      <h2>3) Form Profil</h2>
+      <form id="profilForm" novalidate>
+        <div class="field">
+          <label for="nama">Nama Lengkap</label>
+          <input id="nama" name="nama" type="text" />
+          <small class="error" id="err-nama"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" />
+          <small class="error" id="err-email"></small>
+        </div>
+
+        <div class="field">
+          <label for="telepon">Nomor Telepon</label>
+          <input id="telepon" name="telepon" type="text" />
+          <small class="error" id="err-telepon"></small>
+        </div>
+
+        <div class="actions">
+          <button type="submit">Simpan</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+      <p class="hint">Form divalidasi dengan JavaScript. Jika gagal, submit ditahan dengan <code>return false</code>.</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

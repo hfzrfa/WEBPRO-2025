@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Proyek Web Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="logo">Modul 4</h1>
+        <nav aria-label="Navigasi utama">
+          <ul class="nav" id="mainNav">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#artikel">Artikel</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div
+      id="welcomeBanner"
+      class="welcome"
+      role="status"
+      aria-live="polite"
+      hidden
+    >
+      Selamat datang. Hafiz Rafie, halaman ini sudah interaktif.
+      <button type="button" id="closeWelcome" aria-label="Tutup"></button>
+    </div>
+
+    <main class="container grid" id="beranda">
+      <article id="artikel" class="card">
+        <h2>Artikel Utama</h2>
+        <p>
+            Ini bagian Artikel
+        </p>
+        <p>
+            Bisa di resize dong
+        </p>
+      </article>
+
+      <aside class="card tips">
+        <h3>Tips Singkat</h3>
+        <ul>
+          <li>Biar keren aja</li>
+          <li>Keren kan aowkaokwoakwo</li>
+          <li>Validasi di client dan server.</li>
+        </ul>
+      </aside>
+    </main>
+
+    <section id="kontak" class="container card">
+      <h2>Form Kontak</h2>
+      <form id="contactForm" novalidate>
+        <div class="field">
+          <label for="nama">Nama</label>
+          <input
+            id="nama"
+            name="nama"
+            type="text"
+            placeholder="Nama lengkap"
+            required
+          />
+          <small class="error" id="err-nama"></small>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="email@domain.com"
+            required
+          />
+          <small class="error" id="err-email"></small>
+        </div>
+
+        <div class="field">
+          <label for="pesan">Pesan</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            rows="4"
+            placeholder="Tulis pesan..."
+            required
+          ></textarea>
+          <small class="error" id="err-pesan"></small>
+        </div>
+
+        <button type="submit" class="btn">Kirim</button>
+        <p
+          class="form-status"
+          id="formStatus"
+          role="status"
+          aria-live="polite"
+        ></p>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; 2025</p>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
