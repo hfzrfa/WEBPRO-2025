@@ -2,21 +2,12 @@
 
 Repositori ini berisi kumpulan modul pembelajaran yang dapat diakses langsung melalui tautan di bawah.
 
-## 📘 Daftar Modul
+## Daftar Modul
 
-- [Modul 1](https://modul1webpro.vercel.app/){:target="_blank"}
-- [Modul 2](https://modul2webpro.vercel.app/){:target="_blank"}
-- [Modul 3](https://modul3webpro.vercel.app/){:target="_blank"}
-- [Modul 4](https://modul4webpro.vercel.app/){:target="_blank"}
+- [Modul 1](https://modul1webpro.vercel.app/)
+- [Modul 2](https://modul2webpro.vercel.app/)
+- [Modul 3](https://modul3webpro.vercel.app/)
+- [Modul 4](https://modul4webpro.vercel.app/)
 
 > Klik salah satu modul untuk membuka di tab baru.
 
----
-
-### 📄 Tentang
-Setiap modul berisi materi, contoh kode, dan latihan untuk membantu proses belajar pemrograman secara bertahap.
-
----
-
-### 🧠 Catatan
-Pastikan kamu sudah login ke akun GitHub sebelum mengakses modul jika repositori bersifat privat.
