@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modul Praktikum 1 - Pengenalan JavaScript</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      margin: 40px auto;
+      padding: 0 20px;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+    h1, h2 {
+      color: #333;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #007bff;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    code, pre {
+      background: #f0f0f0;
+      padding: 8px;
+      border-radius: 5px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Praktikum Modul 5</h1>
+  <p><strong>Pengenalan Java Script - Kajian 2</strong></p>
+
+  <div class="card">
+    <h2>1. Fungsi Penjumlahan Dua Angka</h2>
+    <pre><code>function tambah(a, b) {
+  return a + b;
+}</code></pre>
+    <button id="btnTambah">Uji tambah(5, 7)</button>
+    <p id="outTambah"></p>
+  </div>
+
+  <div class="card">
+    <h2>2. Menampilkan Output Variabel</h2>
+    <pre><code>let nama = "Hafiz";
+console.log("Sebelum diubah:", nama);
+
+nama = "Rafie Aditya";
+console.log("Setelah diubah:", nama);</code></pre>
+    <button id="btnConsole">Jalankan console.log()</button>
+    <p>Buka <em>DevTools → Console</em> untuk melihat hasil (Ctrl + Shift + I).</p>
+  </div>
+
+  <div class="card">
+    <h2>3. Laporan Akhir</h2>
+    <p><strong>Pengalaman:</strong> Console membantu melihat nilai variabel dan mendeteksi error. 
+      Variabel <code>let</code> dan <code>const</code> mempermudah pengelolaan data saat program berjalan.</p>
+
+    <p><strong>Contoh Fungsi:</strong></p>
+    <pre><code>function kali(x, y) {
+  return x * y;
+}</code></pre>
+    <button id="btnKali">Uji kali(4, 3)</button>
+    <p id="outKali"></p>
+  </div>
+
+  <script>
+    // Fungsi penjumlahan
+    function tambah(a, b) {
+      return a + b;
+    }
+
+    // Fungsi perubahan variabel dan console.log()
+    function demoConsole() {
+      let nama = "Hafiz";
+      console.log("Sebelum diubah:", nama);
+      nama = "Rafie Aditya";
+      console.log("Setelah diubah:", nama);
+    }
+
+    // Fungsi perkalian
+    function kali(x, y) {
+      return x * y;
+    }
+
+    // Event listener tombol
+    document.getElementById("btnTambah").addEventListener("click", () => {
+      const hasil = tambah(5, 7);
+      console.log("Hasil penjumlahan:", hasil);
+      document.getElementById("outTambah").textContent = "Hasil penjumlahan: " + hasil;
+    });
+
+    document.getElementById("btnConsole").addEventListener("click", () => {
+      demoConsole();
+      alert("Lihat hasil di Console (F12).");
+    });
+
+    document.getElementById("btnKali").addEventListener("click", () => {
+      const hasil = kali(4, 3);
+      console.log("Hasil perkalian:", hasil);
+      document.getElementById("outKali").textContent = "Hasil perkalian: " + hasil;
+    });
+  </script>
+</body>
+</html>
