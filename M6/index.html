@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Validasi</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </div>
+
+    <main class="container">
+      <header class="header">
+        <h1>Daftar Akun</h1>
+        <p>Isi data dengan benar. Validasi berjalan realtime.</p>
+      </header>
+
+      <form
+        id="regForm"
+        novalidate
+        onsubmit="return handleSubmit(event)"
+        class="card"
+      >
+        <div class="field">
+          <label class="label" for="nama">Nama Lengkap</label>
+          <div class="control">
+            <span class="icon" aria-hidden="true">
+              <!-- user icon -->
+              <svg viewBox="0 0 24 24" width="20" height="20">
+              </svg>
+            </span>
+            <input
+              id="nama"
+              name="nama"
+              type="text"
+              placeholder=" "
+              onfocus="handleFocus(this)"
+              onblur="validateNama()"
+              autocomplete="name"
+            />
+            <span class="floating">Nama lengkap</span>
+          </div>
+          <p id="err-nama" class="error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label class="label" for="email">Email</label>
+          <div class="control">
+            <span class="icon" aria-hidden="true">
+              <!-- mail icon -->
+              <svg viewBox="0 0 24 24" width="20" height="20">
+
+              </svg>
+            </span>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder=" "
+              onfocus="handleFocus(this)"
+              onblur="validateEmail()"
+              autocomplete="email"
+            />
+            <span class="floating">nama@domain.com</span>
+          </div>
+          <p id="err-email" class="error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="field">
+          <label class="label" for="usia">Usia</label>
+          <div class="control">
+            <span class="icon" aria-hidden="true">
+              <!-- hash/number icon -->
+              <svg viewBox="0 0 24 24" width="20" height="20">
+                <path d="M9 3 7 21M17 3l-2 18M4 8h16M3 16h16" />
+              </svg>
+            </span>
+            <input
+              id="usia"
+              name="usia"
+              type="number"
+              min="0"
+              inputmode="numeric"
+              placeholder=" "
+              onfocus="handleFocus(this)"
+              onblur="validateUsia()"
+            />
+            <span class="floating">Masukkan usia</span>
+          </div>
+          <p id="err-usia" class="error" role="alert" aria-live="polite"></p>
+        </div>
+
+        <div class="actions">
+          <button type="submit" id="submitBtn" class="btn-primary">
+            Kirim
+          </button>
+          <button type="reset" class="btn-ghost" onclick="resetStates()">
+            Reset
+          </button>
+        </div>
+
+        <div id="form-status" class="form-status" aria-live="polite"></div>
+      </form>
+
+      <footer class="footer">
+        <small
+          >Hafiz Rafie Aditya</small
+        >
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
